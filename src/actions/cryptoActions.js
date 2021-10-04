@@ -13,8 +13,8 @@ export const cryptoFetch = () => async (dispatch) => {
 
 		const config = {
 			headers: {
-				"x-rapidapi-host": "coinranking1.p.rapidapi.com",
-				"x-rapidapi-key": "cd8ac12077msh96c50d5dac6c1e6p193711jsncfc3e8022b40",
+				"x-rapidapi-host": process.env.REACT_APP_RAPID_API_HOST,
+				"x-rapidapi-key": process.env.REACT_APP_RAPID_API_KEY,
 			},
 		};
 
